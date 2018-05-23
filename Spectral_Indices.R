@@ -219,7 +219,8 @@ for(i in all_folders[1]){
                                indices = c("EVI","MNDWI", "NDVI","NDWI", "SAVI"))
   print("Writing Layer Files")
   for(layer in names(all_indices)){
-    writeRaster(all_indices[[layer]], filename = file.path(new_path, paste0(substr(new_path, start=24,stop=45),"_", layer,".tif",sep="")), "GTiff")
+    name2<- layer
+    writeRaster(all_indices[[layer]], filename = file.path(new_path, paste0(substr(new_path, start=28,stop=61),"_", layer,".tif",sep="")), "GTiff")
   }
   print("Calculating AWEI")
   AWEI_part1<- subset(cropped_stack,1) +(subset(cropped_stack,2)* 2.5)

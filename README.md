@@ -15,10 +15,10 @@ For Landsat:
 
 For Sentinel:
 1) Load Bands
-2) Reproject to UTM Zone 32
+2) Eliminate pixels out of surface reflectance valid range
 3) Rescale (.001)
-3) Reclassify Quality Band to create mask for Medium probability, High probablity, and thin cirrus clouds
-4) Use Quality Mask on stacked bands
-5) Use study area polygon to crop bands
-6) Calculate AWEI, NDMI, EVI, MNDWI, NDVI,NDWI, SAVI 
-7) Write all rasters
+4) Reclassify Quality Band to create mask for Medium probability, High probablity, and thin cirrus clouds
+5) Use Quality Mask on stacked bands
+6) Use study area polygon to crop bands
+7) Calculate AWEI, NDMI, EVI, MNDWI, NDVI,NDWI, SAVI 
+8) Write all rasters
